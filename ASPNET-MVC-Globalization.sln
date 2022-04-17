@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNET-MVC-Globalization", "ASPNET-MVC-Globalization\ASPNET-MVC-Globalization.csproj", "{13C82B37-287C-4A7A-BA10-D438D8E09E82}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalizationDemo", "GlobalizationDemo\GlobalizationDemo.csproj", "{A685DCC8-14FE-4624-99CD-DAE5A3F0887C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{13C82B37-287C-4A7A-BA10-D438D8E09E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13C82B37-287C-4A7A-BA10-D438D8E09E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13C82B37-287C-4A7A-BA10-D438D8E09E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13C82B37-287C-4A7A-BA10-D438D8E09E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A685DCC8-14FE-4624-99CD-DAE5A3F0887C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A685DCC8-14FE-4624-99CD-DAE5A3F0887C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A685DCC8-14FE-4624-99CD-DAE5A3F0887C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A685DCC8-14FE-4624-99CD-DAE5A3F0887C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
