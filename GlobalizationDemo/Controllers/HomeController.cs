@@ -1,4 +1,5 @@
 ﻿using GlobalizationDemo.Models;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Localization;
 using System.Diagnostics;
@@ -23,9 +24,14 @@ namespace GlobalizationDemo.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult CultureManagement(string cultureName, string returnUrl)
         {
-            return View();
+            Response.Cookies.Append(CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(cultureName)),
+                new CookieOptions { Expires = DateTimeOffset.Now.AddDays(30) });
+
+            return LocalRedirect(returnUrl);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
