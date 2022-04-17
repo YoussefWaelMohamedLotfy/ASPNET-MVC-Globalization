@@ -8,12 +8,9 @@ builder.Services.AddLocalization(opt =>
     opt.ResourcesPath = "Resources";
 });
 
-builder.Services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix,
-    opt =>
-    {
-        //opt.ResourcesPath = "Resources";
-        
-    }).AddDataAnnotationsLocalization();
+builder.Services.AddMvc()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+    .AddDataAnnotationsLocalization();
 
 builder.Services.AddControllersWithViews();
 
