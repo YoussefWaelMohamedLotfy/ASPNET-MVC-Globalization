@@ -7,4 +7,8 @@
     <RootNamespace>ASPNET_MVC_Globalization</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
 </Project>
