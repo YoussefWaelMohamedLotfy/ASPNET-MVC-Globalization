@@ -6,13 +6,9 @@ using System.Globalization;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddLocalization(opt =>
-{
-    opt.ResourcesPath = "Resources";
-});
-
-builder.Services.AddMvc()
-    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix,
+        opt => { opt.ResourcesPath = "Resources"; })
     .AddDataAnnotationsLocalization();
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
@@ -28,8 +24,6 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
     options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 });
-
-builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
