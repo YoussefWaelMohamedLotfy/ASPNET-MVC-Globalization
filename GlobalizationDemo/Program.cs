@@ -17,6 +17,7 @@ builder.Services.Configure<RequestLocalizationOptions>(options =>
         new CultureInfo("en"),
         new CultureInfo("es"),
         new CultureInfo("fr"),
+        new CultureInfo("ar-EG"),
     };
 
     options.SetDefaultCulture("en");
