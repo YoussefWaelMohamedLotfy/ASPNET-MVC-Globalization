@@ -5,3 +5,11 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 });
+
+function fireConfetti() {
+    confetti({
+        particleCount: 300,
+        spread: 130,
+        origin: { y: 0.6 }
+    });
+}
